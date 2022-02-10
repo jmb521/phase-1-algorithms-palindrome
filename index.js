@@ -1,10 +1,23 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  for(let i = 0; i< word.length; i++) {
+    let n = i + 1
+    if (word[i] !== word[word.length - n]){
+      return false
+    }
+  }
+  return true
+
+
+
 }
 
 /* 
-  Add your pseudocode here
+  find length of string
+  calculate center
+  compare beginning and ends to make sure they are the same
+  keep going in wards in the string until you get to the middle.
 */
+
 
 /*
   Add written explanation of your solution here
